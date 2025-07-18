@@ -114,6 +114,83 @@ main{
 #quick-list{
     font-weight: 500px;
 }
+
+/* some facts section */
+.section-title{
+    font-size: 2.8rem;
+    font-weight: bold;
+     width: 258px;
+}
+.section-description{
+    font-size: 1.25rem;
+    font-weight: 400px;
+    width: 542px;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+   
+}
+
+.card{
+    width: 242px; 
+    height: 242px;
+    margin: 0px auto;
+    border: 1px solid #FF900E;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 90px;
+}
+.card-number{
+    font-size: 2.8rem;
+    font-weight: 600px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.card-name{
+    font-size: 1.25rem;
+    font-weight: 600px;
+}
+/* sponsor */
+.sponsor-info{
+    max-width: 541px;
+    margin: 0px auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.sponsor-title{
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+.sponsor-description{
+    font-size: 1rem;
+    font-weight: 400px;
+}
+.sponsor-company{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    text-align: center;
+}
+.sponsor-company img{
+    filter: grayscale(100%);
+}
+/* footer section */
+footer{
+    max-width: 1440px;
+    margin: 0px auto;
+    height: 100px;
+    margin-top: 150px;
+}
+.footer-content{
+    max-width: 620px;
+    margin: 0px auto;
+    padding: 39px 410px;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 400px;
+}
 /* responsive media query */
 @media screen and (max-width: 576px) {
     .navbar,
@@ -127,6 +204,23 @@ main{
     .our-feature{
         padding-left: 15px;
     }
+    .card-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .section-description{
+        width: 90%;
+    }
+    .sponsor-company{
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 120px;
+    }
+    .sponsor-company img{
+        margin-bottom: 30px;
+    }
+    .footer-content{
+        padding: 0px;
+        padding-top: 30px;
+    }
 }
 /* responsive media tab device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -135,5 +229,19 @@ main{
     }
     .our-feature{
         margin: 50px auto;
+    }
+    .card-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .section-description,.section-title{
+        margin-left: 100px;
+    }
+    .sponsor-company img{
+        width: 50%;
+        margin-left: 30px;
+    }
+    .footer-content{
+        padding: 0px;
+        padding-top: 39px;
     }
 }
